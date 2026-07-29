@@ -35,7 +35,7 @@ h4 {
 .container {
   max-width: 1390px;
   margin: 0 100px;
-  padding: 20px 24px 50px;
+  padding: 50px 24px 50px;
 }
 
 .section {
@@ -552,8 +552,8 @@ iframe {
   right: 24px;               /* CORREÇÃO AQUI: Mudado de left para right */
   background-color: #25D366; 
   color: #ffffff;            
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;        
   display: flex;
   align-items: center;
