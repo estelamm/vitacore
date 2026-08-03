@@ -1,0 +1,44 @@
+# 🧘‍♀️ Vitacore — Studio Pilates & Fisioterapia
+
+Landing page moderna, responsiva e institucional desenvolvida para o **Vitacore Studio Pilates**, focado em fisioterapia, reabilitação e saúde integrada em Florianópolis - SC.
+
+---
+
+## 📌 Sobre o Projeto
+
+Este projeto consiste em uma landing page completa para o estúdio do fisioterapeuta **Leandro Fernandes**. O objetivo principal é apresentar a infraestrutura do estúdio, a metodologia de trabalho personalizada e facilitar o agendamento de avaliações via WhatsApp.
+
+### ✨ Principais Recursos
+
+- **Design UI/UX Acolhedor:** Paleta de cores em tons de areia, azul e terracota para passar sensação de bem-estar, saúde e tranquilidade.
+- **Header Fixo (Sticky):** Navegação ágil com menu responsivo e botão direto para agendamento.
+- **Seção de Depoimentos:** Layout em grid com rolagem suave customizada (*custom scrollbar*) para leitura confortável de avaliações extensas.
+- **Integração com Google Maps:** Localização exata do estúdio embutida via `iframe`.
+- **Botão Flutuante do WhatsApp:** Chamada para ação (CTA) persistente no canto inferior direito para rápida conversão de clientes.
+- **Mosaico de Fotos & Efeitos Hover:** Animações fluidas em cartões e imagens para dinamizar a navegação.
+- **Totalmente Responsivo:** Layout fluido adaptável a smartphones, tablets e desktops.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5:** Estrutura semântica (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+- **CSS3:** 
+  - Variáveis CSS (`:root`) para padronização de cores e tipografia.
+  - Layouts modernos usando **Flexbox** e **CSS Grid**.
+  - Efeitos de transição e animação em hover.
+  - Media Queries para design responsivo.
+- **Google Fonts:** Tipografias *Fraunces* (títulos) e *Work Sans* (corpo do texto).
+
+---
+
+## 📂 Estrutura de Pastas
+
+```text
+├── img/
+│   ├── vitacore-logo.png
+│   ├── equipamentos.jpg
+│   └── pilates-reformer-classroom-with-equipment.jpg
+├── index.html
+├── style.css
+└── README.md
