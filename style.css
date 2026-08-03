@@ -380,6 +380,8 @@ h2 {
 /* Serviços */
 .servicos {
   background: var(--branco-quente);
+  padding: 80px 0; /* Aumenta a área vertical para ocupar bem a tela */
+  width: 100%;
 }
 
 .servicos-grid {
@@ -387,12 +389,30 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .servico-card {
   background: var(--areia);
-  padding: 32px;
+  padding: 40px 32px; /* Unifica o preenchimento para os cards ficarem imponentes */
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.servico-card p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.servico-card ul {
+  padding-left: 20px;
+}
+
+.servico-card li {
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 /* Diferenciais */
@@ -407,32 +427,80 @@ h2 {
   text-align: center;
 }
 
-/* Depoimentos */
+/* Diferenciais */
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.diferencial-item {
+  text-align: center;
+}
+
+//* Depoimentos */
 .depoimentos {
   background: var(--branco-quente);
+  padding: 60px 0; /* Dá um respiro bom para a seção */
 }
 
 .depoimentos-track {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* Cria as 3 colunas. Ao adicionar 6 cards no HTML, ele criará 2 linhas automaticamente */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 24px;
   margin-top: 40px;
 }
 
 .depoimento-card {
-  background: var(--areia);
-  padding: 24px;
+  background: var(--branco-quente);
+  padding: 32px 24px;
   border-radius: 16px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante o autor/cite sempre alinhado no rodapé do card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Elevação suave e profissional */
+  border: 1px solid rgba(0, 0, 0, 0.04); /* Borda sutil de acabamento */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito moderno ao passar o mouse */
+.depoimento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.depoimento-card p {
+  color: #4A4A4A;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 8px;
+  text-align: justify;
+}
+
+/* Deixa a barra de rolagem (scrollbar) discreta, caso o texto seja gigante */
+.depoimento-card p::-webkit-scrollbar {
+  width: 4px;
+}
+
+.depoimento-card p::-webkit-scrollbar-thumb {
+  background: var(--terracota);
+  border-radius: 4px;
 }
 
 .depoimento-card cite {
   color: var(--terracota);
   display: block;
-  margin-top: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
+
 
 /* Contato */
 
