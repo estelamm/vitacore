@@ -212,11 +212,16 @@ h2 {
   display: block;
 }
 /*Inicio */
+
 .inicio-inner {
   display: flex;
   gap: 45px;
   align-items: center;
   padding-top: 0;
+}
+
+.inicio-inner p{
+  text-align: justify;
 }
 
 
@@ -278,6 +283,8 @@ h2 {
 
 .sobre-text p {
   margin-bottom: 20px;
+  text-align: justify;
+
 }
 
 /* Linha de Diferenciais / Ícones */
@@ -296,6 +303,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.feature-item p {
+  text-align: center;
 }
 
 .feature-icon {
