@@ -101,6 +101,7 @@ h2 {
   z-index: 10;
   background: var(--branco-quente);
   border-bottom: 1px solid rgba(0, 0, 0, .06);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
 .header-inner {
@@ -210,10 +211,19 @@ h2 {
   height: 50px;
   display: block;
 }
+/*Inicio */
+.inicio-inner {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  padding-top: 0;
+}
+
 
 /* Sobre */
 .sobre {
   background: var(--branco-quente); /* Alinhado ao seu padrão de cores claras */
+  padding: 80px 0 0; /* Aumenta a área vertical para ocupar bem a tela */
 }
 
 .sobre-inner {
@@ -344,7 +354,9 @@ h2 {
     display: flex;
   }
 
-  /* Ajuste no Flex para empilhar no Celular */
+
+
+
   .hero-inner,
   .sobre-inner,
   .contato-inner {
@@ -380,7 +392,7 @@ h2 {
 /* Serviços */
 .servicos {
   background: var(--branco-quente);
-  padding: 80px 0; /* Aumenta a área vertical para ocupar bem a tela */
+  padding: 80px 0 0; /* Aumenta a área vertical para ocupar bem a tela */
   width: 100%;
 }
 
@@ -439,10 +451,10 @@ h2 {
   text-align: center;
 }
 
-//* Depoimentos */
+/* Depoimentos */
 .depoimentos {
-  background: var(--branco-quente);
-  padding: 60px 0; /* Dá um respiro bom para a seção */
+  background: var(--areia);
+  padding: 80px 0; /* Aumenta a área vertical para ocupar bem a tela */
 }
 
 .depoimentos-track {
@@ -503,6 +515,10 @@ h2 {
 
 
 /* Contato */
+
+.section-contato {
+  padding-bottom: 40px;
+}
 
 .contato-inner {
   display: flex;
