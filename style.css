@@ -158,6 +158,77 @@ h2 {
   font-size: 1.5rem;
 }
 
+
+==============================================================================
+COPIE TUDO ABAIXO DAQUI:
+==============================================================================
+ 
+/* Menu Toggle - Animação e comportamento */
+.menu-toggle {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+ 
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+ 
+.nav {
+  transition: all 0.3s ease;
+}
+ 
+/* Estado aberto do menu em mobile */
+@media (max-width: 480px) {
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: var(--branco-quente);
+    padding: 20px 24px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    gap: 16px;
+  }
+ 
+  .nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+ 
+  .nav a:last-child {
+    border-bottom: none;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: var(--branco-quente);
+    padding: 20px 24px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    gap: 16px;
+  }
+ 
+  .nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+ 
+  .nav a:last-child {
+    border-bottom: none;
+  }
+}
+ 
+
 .header-inner .btn-primary {
   padding: 2px 30px;
 }
@@ -371,6 +442,7 @@ h2 {
 
   .nav.open {
     display: flex;
+    box-shadow: none;;
   }
 
 
@@ -627,6 +699,7 @@ iframe {
 
   .nav.open {
     display: flex;
+    box-shadow: none;
   }
 
   .hero-inner,
@@ -836,6 +909,10 @@ iframe {
   .container {
     margin: 0 16px;
     padding: 32px 16px 32px;
+  }
+
+  .section {
+    padding-top: 35px !important;
   }
 
   .header-inner {
