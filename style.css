@@ -120,14 +120,12 @@ h2 {
   padding: 16px 24px;
 }
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 24px;
+.header-inner .btn-primary {
+  padding: 2px 30px;
 }
 
-/* Modificado: Ajustado para alinhar a imagem do logo */
+
+/* justado para alinhar a imagem do logo */
 .logo {
   display: flex;
   align-items: center;
@@ -136,7 +134,7 @@ h2 {
 
 /* Adicionado: Controla o tamanho e proporção do logo vazado */
 .logo-img {
-  width: 170px; /* Tamanho ideal para não quebrar a altura do seu header */
+  width: 170px; /* Tamanho ideal para não quebrar a altura do header */
   height: auto;  /* Mantém a proporção perfeita */
   display: block;
 }
@@ -161,77 +159,6 @@ h2 {
   background: none;
   border: none;
   font-size: 1.5rem;
-}
-
- 
-/* Menu Toggle - Animação e comportamento */
-.menu-toggle {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
- 
-.menu-toggle:hover {
-  transform: scale(1.1);
-}
- 
-.nav {
-  transition: all 0.3s ease;
-}
- 
-/* Estado aberto do menu em mobile */
-@media (max-width: 480px) {
-  .nav.open {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 56px;
-    left: 0;
-    right: 0;
-    background: var(--branco-quente);
-    padding: 20px 24px;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
-    z-index: 100;
-    gap: 16px;
-  }
- 
-  .nav a {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
- 
-  .nav a:last-child {
-    border-bottom: none;
-  }
-}
- 
-@media (max-width: 768px) {
-  .nav.open {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 56px;
-    left: 0;
-    right: 0;
-    background: var(--branco-quente);
-    padding: 20px 24px;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
-    z-index: 100;
-    gap: 16px;
-  }
- 
-  .nav a {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
- 
-  .nav a:last-child {
-    border-bottom: none;
-  }
-}
- 
-
-.header-inner .btn-primary {
-  padding: 2px 30px;
 }
 
 /* Hero */
@@ -291,6 +218,8 @@ h2 {
   height: 50px;
   display: block;
 }
+
+
 /*Inicio */
 
 .inicio-inner {
@@ -305,7 +234,8 @@ h2 {
 }
 
 
-/* Sobre */
+/* Sobre o profissional*/
+
 .sobre {
   background: var(--branco-quente); 
   padding: 40px 0 0; /* Aumenta a área vertical para ocupar bem a tela */
@@ -418,68 +348,6 @@ h2 {
   color: var(--verde); /* Mantém o termo chave em destaque com a cor principal */
 }
 
-/* ==========================================
-   Responsivo (Adaptado para o Mosaico)
-   ========================================== */
-@media (max-width: 768px) {
-  .nav-cta {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--branco-quente);
-    padding: 16px 24px;
-  }
-
-  .nav.open {
-    display: flex;
-  }
-
-
-
-
-  .hero-inner,
-  .sobre-inner,
-  .contato-inner {
-    flex-direction: column;
-  }
-
-  /* Remove o desalinhamento do mosaico no celular para não cortar a tela */
-  .col-left, .col-right {
-    transform: translateY(0);
-  }
-  
-  .sobre-gallery {
-    max-width: 100%;
-    margin-bottom: 32px; /* Margem de respiro antes do texto */
-  }
-
-  .sobre-features {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .servicos-grid,
-  .diferenciais-grid,
-  .depoimentos-track {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-}
-
 /* Serviços */
 .servicos {
   background: var(--branco-quente);
@@ -516,18 +384,6 @@ h2 {
 .servico-card li {
   margin-bottom: 12px;
   line-height: 1.5;
-}
-
-/* Diferenciais */
-.diferenciais-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 40px;
-}
-
-.diferencial-item {
-  text-align: center;
 }
 
 /* Diferenciais */
@@ -673,50 +529,6 @@ iframe {
   color: var(--branco-quente);
   padding: 8px 0;
   text-align: center;
-}
-
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .nav-cta {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--branco-quente);
-    padding: 16px 24px;
-  }
-
-  .nav.open {
-    display: flex;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.10);
-  }
-
-  .hero-inner,
-  .sobre-inner,
-  .contato-inner {
-    flex-direction: column;
-  }
-
-  .servicos-grid,
-  .diferenciais-grid,
-  .depoimentos-track {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
 }
 
 /* ==========================================
@@ -869,7 +681,7 @@ iframe {
 
   .inicio-inner {
     gap: 32px;
-  }
+  }  
 }
 
 /* ==========================================
@@ -980,7 +792,6 @@ iframe {
   }
 
   .sobre-features {
-    flex-direction: column;
     gap: 20px;
     display: flex;
     flex-direction: row;
@@ -1198,122 +1009,8 @@ iframe {
   }
 }
 
-/* ==========================================
-   RESPONSIVO - EXTRA SMALL (até 360px)
-   Samsung Galaxy A / Dispositivos muito pequenos
-   ========================================== */
-@media (max-width: 360px) {
-  .container {
-    margin: 0 12px;
-    padding: 24px 12px 24px;
-  }
-
-  .header-inner {
-    padding: 10px 12px;
-  }
-
-  .logo-img {
-    width: 100px;
-    height: auto;
-  }
-
-  .nav {
-    padding: 10px 12px;
-  }
-
-  .nav a {
-    font-size: 0.9rem;
-  }
-
-  .hero-text h1 {
-    font-size: 1.3rem;
-    line-height: 1.2;
-  }
-
-  .hero-sub {
-    font-size: 0.88rem;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-  }
-
-  .sobre-text h2 {
-    font-size: 1.2rem;
-  }
-
-  .sobre-text p {
-    font-size: 0.85rem;
-    margin-bottom: 12px;
-  }
-
-  .gallery-item img {
-    height: 250px;
-  }
-
-  .feature-item p {
-    font-size: 0.8rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .servico-card {
-    padding: 16px 12px;
-  }
-
-  .servico-card h3 {
-    font-size: 1rem;
-  }
-
-  .servico-card p {
-    font-size: 0.85rem;
-  }
-
-  .servico-card li {
-    font-size: 0.85rem;
-  }
-
-  .depoimento-card {
-    padding: 16px 10px;
-  }
-
-  .depoimento-card p {
-    font-size: 0.83rem;
-    max-height: 100px;
-  }
-
-  .contato-info p {
-    font-size: 0.85rem;
-  }
-
-  .contato-form input,
-  .contato-form textarea {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  iframe {
-    height: 250px;
-  }
-
-  .btn-whatsapp-direito {
-    width: 56px;
-    height: 56px;
-    bottom: 10px;
-    right: 10px;
-  }
-
-  .icon-whatsapp-svg {
-    width: 26px;
-    height: 26px;
-  }
-}
 
 
+
+
+  
